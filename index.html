@@ -21,17 +21,17 @@
         <!-- NAVIGATION -->
 
         <nav>
-            <div class="nav-wrapper blue">
+            <div class="nav-wrapper lighten-1 purple">
                 <a href="#" class="brand-logo">Logo</a>
                 <ul class="right hide-on-med-and-down" id="nav-mobile">
                     <li>
-                        <a href="">home</a>
+                        <a href="" class="hoverable">home</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="" class="hoverable">About</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="" class="hoverable">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,8 +39,7 @@
 
 
 
-        <!-- BUTTONS WITH COLORZ -->
-
+        <!-- Colored divs! -->
 
         <center>
             <h1>COLOR DIVS</h1>
@@ -50,8 +49,22 @@
         </div>
         <div class="blue red-text">div with color class and red-text</div>
         <div class="deep-purple lighten-3 yellow-text">div with color class and yellow text and deep-purple and lighten-3</div>
+        <div class="black white-text hoverable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque animi, accusantium sapiente corrupti similique
+            eligendi nam voluptate libero magni ipsum sit nemo nesciunt labore ad asperiores tenetur esse distinctio earum.</div>
+
+
+
+
         <br>
         <center>
+
+
+            <!-- BUTTONS WITH COLORZ -->
+
+
+
+
+
             <h1>BUTTONS</h1>
         </center>
 
@@ -114,7 +127,7 @@
         <!-- FLAT BUTTONS -->
 
         <a href="#" class="red waves-effect waves-orange btn-flat">button</a>
-        <button class=" lighten-10 btn-flat waves-effect waves-light dark-blue">Button 2</button>
+        <button class=" lighten-10 btn-flat waves-effect hoverable waves-light dark-blue">Button 2</button>
 
 
         <center>
@@ -219,7 +232,147 @@
             </ul>
         </div>
     </nav>
+    <br>
+    <br>
 
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" class="center brand-logo right">Logo</a>
+            <ul class=" hide-on-med-and-down" id="nav-mobile">
+                <li>
+                    <a href="">home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- DROPDOWN NAVIGATION YEEEE -->
+
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="">1</a>
+        </li>
+        <li>
+            <a href="">2</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="">4</a>
+        </li>
+
+    </ul>
+    <nav>
+        <div class="nav-wrapper red">
+            <a href="#" class="center brand-logo right">Logo</a>
+            <ul class=" hide-on-med-and-down" id="nav-mobile">
+                <li>
+                    <a href="">home</a>
+                </li>
+                <li>
+                    <a class="dropdown-button" data-activates="dropdown1" href="">
+                        <i class="material-icons right">arrow_drop_down</i> dropdown</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- ICONS AND BUTTONS IN NAV -->
+    <nav>
+
+        <div class="nav-wrapper black">
+            <a href="" class="brand-logo right">logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <i class="material-icons">search</i>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons left">refresh</i>link with left icon</a>
+                </li>
+                <li>
+                    <a href="" class="waves-effect waves-light btn">Button</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+<!-- SEARCH BAR -->
+
+
+<br><br>
+
+
+<nav>
+<div class="nav-wrapper">
+    <form>
+        <div class="input-field">
+            <input type="search" required id="search">
+            <label for="search" class="label-icon"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+        </div>
+    </form>
+</div>
+
+
+</nav>
+
+<br><br><br><br>
+<!-- MOBILE COLLAPSIBLE MENU -->
+
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="" class="brand-logo">logo</a>
+        <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="">home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">services</a></li>
+<ul class="side-nav" id="mobile-demo">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Services</a></li>
+</ul>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- PICK UP WHERE YOU LEFT OFF AND FIX HAMBURGER MENU-->
+<!-- https://www.youtube.com/watch?v=nqT8c5OFjEQ  33:48!!!-->
 
 
 
@@ -227,7 +380,8 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
+<script>    $(".button-collapse").sideNav();
+    </script> 
 
 
 
